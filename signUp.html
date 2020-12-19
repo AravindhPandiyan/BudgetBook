@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="signUp.css">
+
+  <title>sign up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <img class="img" src="undraw_authentication_fsn5.png">
+  <span class="reg">Registration</span>
+
+  <input type="text" placeholder="Enter Your Name" class="name">
+  <input type="email" placeholder="Enter Email Id" class="ema" id="email">
+  <input type="password" placeholder="Enter Password" class="pas" id="password">
+  <input type="password" placeholder="Confirm Password" class="cpas" id="confirmpassword">
+
+  <button id="btnSignUp" class="signup">Sign Up</button>
+
+  <!-- <div class="content">
+      <input type="email" placeholder="enter username" class="ema" id="email">
+      <input type="password" placeholder="enter your password" class="pass" id="password">
+      <input type="password" placeholder="reenter your password" class="repass" id="confirmpassword">
+      <button class="bu" id="btnSignUp"><img class="image" src="keyboard_arrow_right_24px.png"></button>
+    <span class="new">
+      <a href="signIn.html">already a have a account</a>
+    </span>
+    
+
+
+  </div>
+  <div class="cir">
+    <a href="#">  <i class="fa fa-camera" style="font-size:48px"></i>
+    </a>
+  </div> -->
+  <script src="index.js"></script>
+  <script>
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        var userID = firebase.auth().currentUser.uid;
+        firebase.database().ref('users/' + userID).once('value').then(function (snapshot) {
+          if (snapshot.val()) {
+            window.location.href = "homePage.html";
+
+          }
+          else {
+            window.location.href = "test.html";
+
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

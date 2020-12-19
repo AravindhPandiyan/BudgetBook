@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="test.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://foliotek.github.io/Croppie/croppie.css'>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+</head>
+
+<body>
+  <div class="pho">
+    <div id="modal">
+      <div id="main-cropper"></div>
+      <a class="button actionUpload">
+        <span>Upload</span>
+        <input type="file" id="upload" value="Choose Image" accept="image/*">
+      </a>
+      <button id="showResult">Done</button>
+      <button class="actionDone">Done</button>
+      <button class="actionCancel" onclick="cancle()">Cancel</button>
+    </div>
+    <!-- <div id="result-wrapper"> -->
+
+    <!-- <img src="" id="result" style=" width: 300px; height: 300px;"> -->
+    <!-- <button id="showResult">show result</button> -->
+    <!-- </div> -->
+  </div>
+  <div class="det display">
+    <div class="details">
+
+      <div class="cont"></div>
+    </div>
+    <div class="ellipes" onclick="adphoto()">
+      <div class="icons">
+        <i class="material-icons i">
+          photo_camera
+        </i>
+      </div>
+      <div id="result-wrapper" class="fim hide" >
+        <img src="" id="result" style=" width: 100%; height: 100%;">
+      </div>
+    </div>
+   
+    <input type="text" placeholder="Enter Your Business Name" class="Business" id="bname">
+    <input type="text" placeholder="Enter Your First Name" class="fname" id="fname">
+    <input type="text" placeholder="Enter Your Last Name" class="lname" id="lname">
+    <input type="text" placeholder="Enter Address" class="address" id="address">
+    <input tupe="text" placeholder="Enter Your Phone No" class="phone" id="phone">
+    <script src="test.js"></script>
+    <button class="but" id="butDetails"><span class="material-icons span">
+        keyboard_arrow_right
+      </span></button>
+  </div>
+  
+  <script src="index.js"></script>
+  <script>
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        var userID = firebase.auth().currentUser.uid;
+        firebase.database().ref('Users/' + userID).once('value').then(function (snapshot) {
+          if (snapshot.val()) {
+            window.location.href = "homePage.html";
+          }
+        });
+      }
+
+    });
+  </script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+  <script src='https://foliotek.github.io/Croppie/croppie.js'></script>
+  <script>
+    var flag = 0;
+    var basic = $("#main-cropper").croppie({
+      viewport: { width: 300, height: 300, type: 'circle' },
+      boundary: { width: 300, height: 300 },
+      showZoomer: true,
+      url: "",
+      enableExif: true
+
+    });
+
+    function readFile(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          $("#main-cropper").croppie("bind", {
+            url: e.target.result
+          });
+
+
+        };
+
+        reader.readAsDataURL(input.files[0]);
+        flag = 1;
+      }
+    }
+
+    $(".actionUpload input").on("change", function () {
+      readFile(this);
+    });
+    $(".actionDone").on("click", function () {
+      $(".actionDone").toggle();
+      $(".actionUpload").toggle();
+
+    });
+
+    $("#showResult").click(function () {
+      console.log("i am called");
+      let photo = document.querySelector('.pho');
+      let det = document.querySelector('.det');
+
+      photo.classList.remove('display');
+      det.classList.add("display");
+
+      $("#main-cropper")
+        .croppie("result", {
+          type: "canvas",
+          size: "viewport",
+          circle: true
+        })
+        .then(function (resp) {
+          $("#result").attr("src", resp);
+          let sec = document.querySelector('.icons');
+          let fima = document.querySelector('.fim');
+          if (flag == 1) {
+            fima.classList.remove('hide');
+            sec.classList.add("hide");
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="r.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+      <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+    <script src="read.js"></script>
+    <title>you Gave</title>
+</head>
+<body onload="read()">
+    <button class="button"><span class="material-icons">chevron_left</span><div class="back" onclick="goBack()">Back</div></button>
+    <div class="rectangle"></div>
+    <button class="green">You Gave</button>  
+     <div class="name"></div>
+    <input class="input" type="text" id="money" required></input>
+    <input class="input2" type="text" id="note" placeholder="Add Note(optional)"></input>
+    <div>
+        <span class="material-icons i">
+        date_range
+        </span> 
+        <input type="text" id="datepicker" class="rect"></div>
+    <!-- <img class="img" src="https://i.ibb.co/zWMW3GH/add-a-photo-24px.png" alt="add-a-photo-24px"> -->
+    <button class="save" id="yougave">Save</button>  
+    <script src="index.js"></script>
+    <script>
+        function goBack()
+        {
+            var id = location.search.substring(0);
+            var idc = id.slice(1);
+            window.location.href="transaction.html?"+idc;
+        }
+    </script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        </script>
+</body>
+</html>

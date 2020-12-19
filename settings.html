@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="settings.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="settings.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+    <title>Setting</title>
+</head>
+
+<body>
+    <header>
+        <a href="homePage.html"><span class="material-icons">navigate_before</span>Settings</a>
+    </header>
+    <section class="options">
+        <li onclick="overlayToggle()"><span class="material-icons"
+                style="font-size: 32px;">security</span><a>Security</a><i id="next-s" class="material-icons"
+                style="font-size: 37px;">navigate_next</i></li>
+        <li><span class="material-icons" style="font-size: 32px;">language</span><a>Language</a><b id="lang">English</b>
+        </li>
+        <li><span class="material-icons" style="font-size: 32px;">monetization_on</span><a>Currency</a><b
+                id="curr">RUPEE</b></li>
+        <!-- <li><span class="material-icons" style="font-size: 32px;">backup</span><a>Backup</a><i id="next-b"
+                class="material-icons" style="font-size: 37px;">navigate_next</i></li> -->
+        <li><span class="material-icons" style="font-size: 32px;">share</span><a>Share</a></li>
+        <li onclick="overlayToggle2()"><span class="material-icons" style="font-size: 32px;">help</span><a>Help</a></li>
+        <li id="btnLogOut"><span class="material-icons" style="font-size: 32px;">power_settings_new</span><a>Sign
+                Out</a></li>
+        <!-- <div id="DA"><a>Delete Account</a></div> -->
+    </section>
+    <div class="overlay">
+        <div>
+            <a>Security</a><a onclick="overlayToggle()"><span class="material-icons"
+                    style="font-size: 33px;">cancel</span></a>
+            <li id="UP" onclick="updatePassword1()"><span class="material-icons"
+                    style="font-size: 39px;">update</span><a>Update Password</a></li>
+            <!-- <li id="AL"><span class="material-icons" style="font-size: 39px;">phonelink_lock</span><a>App Lock</a>
+                <a><label id="APC" class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </a>
+            </li>
+            <li id=FP><span class="material-icons" style="font-size: 40px;">fingerprint</span><a>Fingerprint</a>
+                <a><label id="FPC" class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </a>
+            </li> -->
+            <li id="emailInput">
+                    <input type="email" id="email" class="iOver" placeholder="Enter your email">
+                    <button class="iBut" onclick="updatePassword()">Submit</button>
+            </li>
+
+        </div>
+    </div>
+    <section class="about">
+        <a onclick="overlayToggle1()">About Us</a>
+        <a>Privacy Policy</a>
+    </section>
+    <div class="overlay1">
+        <div>
+            <a onclick="overlayToggle1()">About Us<span class="material-icons"
+                    style="font-size: 33px;">cancel</span></a>
+            <p>NO MORE
+                “Stay no more a needle in the haystack”, to develop your business visit out webpage OCEANAND.COM in
+                which we help people advertising in digital marketing and reaching customers, we oceanand will help you
+                with multilingual and multicultural ability and promise a perfect reach to the targeted audience without
+                any discomfort. After lot of research we assure you that you are in capable hands which will rise your
+                SEO. And also oceanand can make technical wonders till date with best care for the customer.<br>
+
+                <br>PROMULGATE <br>
+                It is need not necessary for you to announce out loud about your company when you have us by your side.
+                Oceanand.com has the very distinctive ability, such as multi lingual and multi cultural understanding
+                and communication ability. With this oceanand assures you perfect connectivity with customers and
+                prompts your site in advertising.
+
+                <br><br>BRANDING<br>
+                Branding a product isn’t once in a lifetime work, to be successful the branding ideas must be updated
+                both practically and tactically which we will provide and help you reach great heights.
+
+                <br><br>WEB ADVERTISING<br>
+                We will analyse your present situation and our team of experts will review objectively and will give you
+                analytical ideas for improvement.
+
+                <br><br>SEO<br>
+                Our crew of content creators will create key words that would be typed in the search engine which will
+                help you by increasing your website’s visibility.
+                Be the first to be found, first to be experienced by the customers and be the first to be our clients.
+                In digital marketing you need to improve your SEO skills to be on the top in the competition and our SEO
+                experts will pave way for that future if yours.
+
+                <br><br>IoT product development<br>
+                What ever the problems you face the recent algorithm update which causes drop in traffic or the previous
+                one which has caused problems we will solve them for you and help you to turn the cover.
+                SITE AND MOBILE APPLICATION DEVELOPMENT
+                Clients targeting markets across multiple regions will be benefited from our approach to international
+                site.
+                Even during pandemic like this we can help you build up your revenue by creating a web dedign that will
+                make your presence all day long and also help you continue your business in digital platform.</p>
+        </div>
+    </div>
+    <div class="overlay2">
+        <div>
+            <a onclick="overlayToggle2()">Help<span class="material-icons" style="font-size: 33px;">cancel</span></a>
+            <p style="text-align:center">
+                <br> for any queries mails us on<br>
+
+                <a href="mailto:info@andbills.com"> info@andbills.com</a>
+            </p>
+        </div>
+    </div>
+    <footer class="version">
+        Version: V1.0<br>Made in India
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (!user) {
+                window.location.href = "signIn.html";
+            }
+
+        });
+    </script>
+</body>
+
+</html>

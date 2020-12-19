@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+    <title>Customer</title>
+    <link rel="stylesheet" href="homePage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="homePage.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body onload=" readCustomer()">
+    <header id="topHalf">
+        <nav id="navBar">
+            <span id="letter">A</span>
+            <div id="identity">
+                bname
+            </div>
+            <i class="material-icons" id="i-s" style="font-size:2.8vh">&#xe7f4;</i>
+            <a href="settings.html"><i class="material-icons" id="i-n" style="font-size:2.8vh">&#xe8b8;</i></a>
+        </nav>
+        <div id="d-l">
+            <li id="a">&#8377 0</li>
+            <li id="b">you will get</li>
+        </div>
+        <div id="d-r">
+            <li id="aa">&#8377 0</li>
+            <li id="b">you will give</li>
+        </div>
+        <button id="fR" onclick="window.location.href='fullreport.html?'+id1">Full report<i id="next"
+                class="material-icons">&#xe5cc;</i></button>
+    </header>
+    <section class="toolBar">
+        <button id="i-p" onclick="search()"><i class="material-icons">&#xe8b6;</i></button>
+        <button id="i-d" onclick="addCustomer()"><i class="material-icons" style="font-size:30px">add</i></button>
+    </section>
+    <div id="search">
+        <input id="sBar" type="text" onkeyup="myFunction()" placeholder="Search">
+    </div>
+    <section class="list" id="list" onscroll="resize()" style="overflow: scroll;">
+
+    </section>
+    <script>
+        var id = location.search.substring(0);
+        var id1 = id.slice(1);
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (!user) {
+                window.location.href = "signUp.html";
+            }
+
+        });
+    </script>
+</body>
+
+</html>

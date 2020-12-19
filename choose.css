@@ -1,0 +1,142 @@
+body{
+  margin: 0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+.hea{
+  position:fixed;
+  width:100%;
+height: 14.6205%;
+background :rgba(196, 196, 196, 0.24);
+border-radius: 0px 0px 0px 25px;
+}
+h1{
+  position: fixed;
+width: 40.5797%;
+height: 4.35267%;
+left: 11.3526%;
+top: 8.1473s;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 25.8px;
+line-height: 39px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+.bus{
+  position: fixed;
+width: 74.3961%;
+height: 28.0133%;
+left: 12.8019%;
+top: 18.0803%;
+border:none;
+outline:none;
+background:rgba(196, 196, 196, 0.24);
+border-radius: 25px;
+opacity: 0.55;
+}
+.bus.hide{
+  position: fixed;
+  width: 74.3961%;
+  height: 28.0133%;
+  left: 12.8019%;
+  top: 18.0803%;
+border:none;
+outline:none;
+background:rgba(196, 196, 196, 0.24);
+border-radius: 25px;
+opacity: 0.0;
+}
+
+.busi{
+  position: fixed;
+width: 56.763%;
+height: 20.2008%;
+left: 19.5652%;
+top: 18.0803%;
+
+}
+
+.per.show{
+  position: fixed;
+width: 74.3961%;
+height: 28.01339%;
+left: 12.8019%;
+top: 50%;
+border:none;
+outline:none;
+background: rgba(196, 196, 196, 0.24);
+border-radius: 25px;
+opacity: 0.55;
+}
+.per{
+  position: absolute;
+  position: fixed;
+  width: 74.3961%;
+  height: 28.01339%;
+  left: 12.8019%;
+  top: 50%;
+border:none;
+outline:none;
+background: rgba(196, 196, 196, 0.24);
+border-radius: 25px;
+opacity: 0;
+}
+.peri{
+  position: fixed;
+  width: 64.734%;
+  height: 19.3080%;
+  left: 19.5652%;
+  top: 51.0044%;
+
+}
+.sho{
+  position: fixed;
+width: 31.88405%;
+height: 3.01339%;
+left: 35.99033%;
+top: 41.741071%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #5F6368;
+}
+
+.pers{
+  position: fixed;
+width: 27.7777%;
+height: 3.01339%;
+left: 37.9227%;
+top: 71.76339%;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #5F6368;
+}
+.net{
+  position: fixed;
+width: 16.9082%;
+height: 7.8125%;
+left: 76.3285%;
+top: 86.1607%;
+border:none;
+outline:none;
+border-radius: 70px;
+background: #FFCB21;
+}
+.material-icons.arro{
+  
+font-size: 48px;
+
+color: white;
+}

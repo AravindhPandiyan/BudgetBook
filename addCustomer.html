@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="addCustomer.css">
+  <link rel='stylesheet' href='https://foliotek.github.io/Croppie/croppie.css'>
+  <title>Add Customer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+
+</head>
+
+<body>
+  <div class="add display">
+    <div class="header">
+      <span class="arr"><span class="material-icons">
+          arrow_back_ios
+        </span></span>
+      <button class="bu" onclick="addcontact()">Back</button>
+    </div>
+    <div  class="sec" onclick="adphoto()">
+      <!-- add_a_photo -->
+     
+      <span class="material-icons cam">
+        add_a_photo
+      </span>
+    </div>
+    <div id="result-wrapper" class="fim hide" >
+      <img src="" id="result" style=" width: 100%; height: 100%;">
+    </div>
+    <input type="text" placeholder="Enter Name" class="cname" id="cname">
+    <span class="ico">
+      <i class="material-icons">
+        account_circle
+      </i>
+    </span>
+    <input type="text" placeholder="Enter Mobile number" class="num" id="cnumber" maxlength="13" minlength="13"
+      value="+91" onkeypress="isNumber(event)">
+    <span class="flag"><img src="india 1.png"></span>
+    <button id="newCust" class="save">SAVE</button>
+    <span class="ale">Alert them</span>
+    <button class="message" onclick="amessage()"><span class="material-icons m">
+        chat
+      </span></button>
+    <button class="whatsapp" onclick="send()"><img src="icons8-whatsapp-96 1.png"></button>
+  </div>
+  <div class="photo">
+    <div id="modal">
+      <div id="main-cropper"></div>
+      <a class="button actionUpload">
+        <span>Upload</span>
+        <input type="file" id="upload" value="Choose Image" accept="image/*">
+      </a>
+      <button id="showResult">Done</button>
+      <button class="actionDone">Done</button>
+      <button class="actionCancel" onclick="cancle()">Cancel</button>
+    </div>
+    <!-- <div id="result-wrapper"> -->
+
+      <!-- <img src="" id="result" style=" width: 300px; height: 300px;"> -->
+      <!-- <button id="showResult">show result</button> -->
+    <!-- </div> -->
+  </div>
+  <script src="index.js"></script>
+  <script type="text/javascript">
+    function amessage() {
+      var phone = document.getElementById("cnumber").value;
+      var message = "you have been added to andbill"
+      if (phone != null) {
+        window.location.href = 'sms:' + phone + '?&body=' + message;
+      }
+    }
+    function send() {
+      var phone = document.getElementById("cnumber").value;
+      var message = "you have been added to andbill"
+      if (phone != null) {
+        window.location.href = 'https://api.whatsapp.com/send?phone=' + phone + '&text=%20' + encodeURIComponent(message);
+      }
+    }
+  </script>
+  <script src="addCustomer.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+  <script src='https://foliotek.github.io/Croppie/croppie.js'></script>
+  <script>
+    var flag=0;
+    var basic = $("#main-cropper").croppie({
+      viewport: { width: 300, height: 300, type: 'circle' },
+      boundary: { width: 300, height: 300 },
+      showZoomer: true,
+      url: "",
+      enableExif: true
+
+    });
+
+    function readFile(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          $("#main-cropper").croppie("bind", {
+            url: e.target.result
+          });
+          
+
+        };
+
+        reader.readAsDataURL(input.files[0]);
+        flag=1;
+      }
+    }
+
+    $(".actionUpload input").on("change", function () {
+      readFile(this);
+    });
+    $(".actionDone").on("click", function () {
+      $(".actionDone").toggle();
+      $(".actionUpload").toggle();
+      
+    });
+
+    $("#showResult").click(function () {
+      console.log("i am called");
+      let photo=document.querySelector('.photo');
+let add=document.querySelector('.add');
+     
+      photo.classList.remove('display');
+  add.classList.add("display");
+ 
+      $("#main-cropper")
+        .croppie("result", {
+          type: "canvas",
+          size: "viewport",
+          circle: true
+        })
+        .then(function (resp) {
+          $("#result").attr("src", resp);
+          let sec=document.querySelector('.sec');
+      let fima=document.querySelector('.fim');
+          if(flag==1)
+  {
+      fima.classList.remove('hide');
+  sec.classList.add("hide");
+  }
+        });
+    });
+  </script>
+
+</body>
+
+</html>

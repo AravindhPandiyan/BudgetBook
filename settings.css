@@ -1,0 +1,478 @@
+body {
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+header {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 12.83vh;
+    box-shadow: 0px 0.44vh 0.44vh rgba(0, 0, 0, 0.12);
+    font-size: 26px;
+}
+header a{
+    position: absolute;
+    top: 5.24vh;
+    left: 5.48vw;
+    text-decoration: none;
+    color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 4.35vh;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+.options {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 66.96vh;
+    list-style: none;
+    font-size: 20px;
+}
+
+.options li{
+    color: #626262;
+    height: 9.15vh;
+    border: 0.22vh solid rgba(234, 234, 234, 0.5);
+}
+
+.options li span {
+    position: relative;
+    left: 5.79vw;
+    top: 2.67vh;
+}
+
+.options li a {
+    position: relative;
+    left: 7.72vw;
+    top: 1.78vh;
+}
+
+#next-s {
+    position: fixed;
+    top: 15.73vh;
+    left: 85.74vw;
+}
+
+#next-b {
+
+    position: fixed;
+    top: 44.08vh;
+    left: 85.74vw;
+}
+
+#lang {
+    position: fixed;
+    top: 25.23vh;
+    left: 72.94vw;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 3.34vh;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFCB21;
+}
+
+#curr {
+    position: fixed;
+    top: 34.93vh;
+    left: 72.94vw;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 3.34vh;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFCB21;
+}
+
+/* #DA {
+    height: 71px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #FC0D1C;
+    border: 2px solid rgba(234, 234, 234, 0.5);
+    border-bottom: 4px solid rgba(234, 234, 234, 0.5);
+}
+#DA a {
+    position: relative;
+    top: 22px;
+} */
+.about {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 10.04vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.about a{
+    margin: auto;
+    width: 28.50vw;
+    text-align: center;
+}
+
+.version {
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 10.15vh;
+    color: #0D87F0;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(25, 25, 25, 0.53);
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    transition: 1s;
+    list-style: none;
+}
+
+.overlay div {
+    position: relative;
+    background-color: white;
+    height: 56.91vh;
+    top: 43.08vh;
+    border-top-left-radius: 2.23vh;
+    border-top-right-radius: 2.23vh;
+    display: flex;
+}
+
+.overlay div a {
+    position: fixed;
+    width: 21.49vw;
+    height: 3.34vh;
+    left: 11.83vw;
+    top: 46.2vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 3.34vh;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #626262;
+}
+
+/* #eIOverlay {
+    display: none;
+} */
+
+#emailInput {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#emailInput input {
+    height: 6.25vh;
+    font-size: 2.34vh;
+    padding-left: 2.5vw;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    border: 1px solid #E9DFDF;
+    border-radius: 1.46vh;
+    outline: none;
+    display: none;
+}
+
+#emailInput button {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 1vh;
+    margin-top: 1.5vh;
+    background-color: #FFCB21;
+    color: black;
+    font-weight: 525;
+    border-radius: 1vh;
+    outline: none;
+    border: none;
+    font-size: 2vh;
+    display: none;
+}
+
+.overlay div a span {
+    position: fixed;
+    width: 7.97vw;
+    height: 3.68vh;
+    right: 6.76vw;
+    top: 45.64vh;
+}
+
+.overlay div li span{
+    position: fixed;
+    left: 13.28vw;
+    color: #626262;
+}
+
+#UP {
+    position: fixed;
+    width: 100vw;
+    height: 4.35vh;
+    top: 57.36vh;
+    
+}
+
+#UP a {
+    position: fixed;
+    width: 46.13vw;
+    height: 3.34vh;
+    left: 29.71vw;
+    top: 57.81vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 3.34vh;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #626262;
+
+}
+
+#AL {
+    position: fixed;
+    width: 100vw;
+    height: 3.34vh;
+    top: 67.52vh;
+}
+
+#AL a{
+    position: fixed;
+    width: 23.67vw;
+    height: 3.34vh;
+    left: 29.71vw;
+    top: 67.52vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 3.34vh;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #626262;
+}
+
+#FP {
+    position: fixed;
+    width: 100vw;
+    height: 3.34vh;
+    top: 77.23vh;
+}
+
+#FP a{
+    position: fixed;
+    width: 28.98vw;
+    height: 3.34vh;
+    left: 29.71vw;
+    top: 77.23vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 3.34vh;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #626262;
+}
+
+/* #btnLogOur {
+    position: fixed;
+    width: 100%;
+    height: 35px;
+    top: 787px;
+}
+
+#SOAD a {
+    position: fixed;
+    text-align: left;
+    width: 201px;
+    height: 60px;
+    left: 123px;
+    top: 783px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #626262;
+} */
+
+.switch {
+    display: inline-block;
+    width: 10.62vw;
+    height: 2.67vh;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    background-color: #EB5757;;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 2.23vh;
+    width: 4.83vw;
+    left: 0.22vw;
+    bottom: 0.22vw;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+input:checked + .slider {
+    background-color: #56C568;
+  }
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(4.83vw);
+    -ms-transform: translateX(4.83vw);
+    transform: translateX(4.83vw);
+}
+
+.slider.round {
+    border-radius: 2.67vh;
+}
+
+.slider.round:before {
+    border-radius: 50vh;
+}
+
+#APC {
+    position: fixed;
+    left: 81.4vw;
+    top: 68.19vh;
+}
+
+#APC span{
+    position: fixed;
+    width: 10.62vw;
+    height: 2.67vh;
+    left: 81.4vw;
+    top: 68.19vh;
+}
+
+#FPC {
+    position: fixed;
+    left: 81.4vw;
+    top: 77.23vh;
+}
+
+#FPC span {
+    position: fixed;
+    width: 10.62vw;
+    height: 2.67vh;
+    left: 81.4vw;
+    top: 77.23vh;
+}
+.overlay1 {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(25, 25, 25, 0.53);
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    transition: 1s;
+    list-style: none;
+}
+.overlay1 div {
+    position: relative;
+    background-color: white;
+    height: 80.91vh;
+    top: 8.08vh;
+    border-radius:  2.23vh;
+    overflow: auto;
+    width:84.29vw;
+    left:7.72vw;
+}
+.overlay1 p{
+    margin: 4vw;
+    letter-spacing:0.05em ;
+    margin-top: 4vh;
+}
+.overlay1 a{
+    position: relative;
+    font-size: 25px;
+    margin-left: 4vw;
+    margin-top: 4vw;
+    letter-spacing:0.05em ;
+    line-height: 3.34vh;
+}
+.overlay1 div a span {
+    position: relative;
+    left:36.76vw;
+    top:1vh;
+}
+.overlay2 {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(25, 25, 25, 0.53);
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    transition: 1s;
+    list-style: none;
+}
+.overlay2 div {
+    position: relative;
+    background-color: white;
+    height: 80.91vh;
+    top: 8.08vh;
+    border-radius:  2.23vh;
+    overflow: auto;
+    width:84.29vw;
+    left:7.72vw;
+}
+
+.overlay2 a{
+    position: relative;
+    font-size: 25px;
+    margin-left: 4vw;
+    margin-top: 4vw;
+    letter-spacing:0.05em ;
+    line-height: 3.34vh;
+}
+.overlay2 div a span {
+    position: relative;
+    left:50.76vw;
+    top:1vh;
+}

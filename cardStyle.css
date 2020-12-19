@@ -1,0 +1,76 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  padding:0%;
+  margin: 0%;
+}
+.YouGave{
+    position: relative;
+    width: 100%;
+    height: 11.71vh;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-sizing: border-box;
+    /* z-index: 3; */
+  }
+  .YouGot{
+    position: relative;
+    width: 100%;
+    height: 11.71vh;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-sizing: border-box;
+  }
+  .text{
+    position: absolute;
+    width: 33.57vw;
+    height: 4.01vh;
+    left: 12.07vw;
+    top: 5.58vh;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight:500;
+    font-size: 18px;
+    line-height: 0px;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .inr{
+    position: absolute;
+    top: 3.57%;
+    left: 100%;
+    font-size: 24px;
+  }
+  .hara{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 3.86vw;
+    height: 11.71vh;
+    background: #4CA90C;
+  }
+  .laal{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 3.86vw;
+    height: 11.71vh;
+    background: #FC0D1C;
+  }
+  .amount{
+    position: absolute;
+    width: 11.11vw;
+    height: 4.07vh;
+    left: 46.17vw;
+    top: 3.90vh; 
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+
+  }
+

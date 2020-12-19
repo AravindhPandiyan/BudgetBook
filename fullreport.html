@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="fullreport.css" rel="stylesheet">
+    <link rel="stylesheet" href="card.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+    <title>full report</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="container"></div>
+    <a href="homePage.html"><div class="material-icons" style="color: black;">chevron_left</div>
+    <div class="ContText">Full Report</div></a>
+    <div class="border"></div>
+    <div class="ygve">You Gave:</div>
+    <div class="up">&#8377;0</div>
+    <div class="do">&#8377;0</div>
+    <div class="rect"></div>
+    <div class="ntamt">Net Balance</div>
+    <div class="ntp">&#8377;0</div>
+    <div class="ygot">You Got:</div>
+    <div class="stdt">Start date<input type="text" id="datepicker"></div>
+    <div class="Edt">End date<input type="text" id="datepicker1" onchange="fulldetails()" ></div>
+    <div class="sltdt">Select Dates</div>
+    <div class="totalEnt"></div>
+    <div class="total">Total</div>
+    <div class="ygv">You Gave</div>
+    <div class="ygo">You Got</div>
+    <div class="entries"></div>
+    <div class="ygaM">&#8377;0</div>
+    <div class="ygoM">&#8377;0</div>
+    <section class="entry" style="overflow: scroll;">
+        <!-- <li>
+            <div class="ca">
+                <div class="gr"></div>
+            <div class="txt">Ram</div>
+            <div class="txtM">&#8377;400</div>
+            <div class="txtN">&#8377;600</div>
+            <div class="calenderff">10000</div>
+            </div>           
+        </li>       -->
+    </section>
+    <img class="imgS" src="https://i.ibb.co/TcFWDdJ/calendar-today-24px.png" alt="calendar-today-24px">
+    <div class="syb">---</div>
+    <img class="imgE" src="https://i.ibb.co/TcFWDdJ/calendar-today-24px.png" alt="calendar-today-24px">
+</body>
+<script>
+    $( function() {
+      $("#datepicker").datepicker();
+    } );
+    $( function() {
+      $("#datepicker1").datepicker();
+    } );
+    </script>
+    <script src="index.js"></script>
+</html>

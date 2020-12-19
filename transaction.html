@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="transaction.js"></script>
+    <link href="transaction.css" rel="stylesheet">
+    <link href="cardStyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+    <title>Transaction</title>
+</head>
+
+<body onload="traDetails()">
+    <div>
+        <button class="button" onclick="window.location.href='homePage.html'"><span
+                class="material-icons">chevron_left</span>
+            <div class="back">Back</div>
+        </button>
+    </div>
+    <div class="container">
+    </div>
+    <div class="ellipse"></div>
+    <div class="circle" onclick="newphoto()"></div>
+    <div class="bar">
+        <img class="cal1" src="https://i.ibb.co/6ysHbxz/calendar-today-24px.png" alt="calendar-today-24px">
+        <div  class="bartext">Set deadline for payment
+        <!-- <input class="data" type="text" id="datepicker" onchange="readdate()"> -->
+   </div>
+   <input type="text" id="datepicker" style="opacity: 0; z-index: 500;" placeholder="mm/dd/yy" onchange="readdate()"></div>
+
+    
+    <!-- <div class="dOverlay">
+        <div id="close" onclick="dOverlay()"><span style="font-size: 33px;" class="material-icons">close</span></div> -->
+        
+    <!-- </div> -->
+    <!-- <div class="dOverlay" ><input class="data" type="text" id="datepicker" onchange="readdate()"></div> -->
+    <!-- <div id="over"></div>
+    <div> -->
+        <button onclick="call()" class="elli1"><img class="call" src="https://i.ibb.co/G3RP9tk/call-24pxcall.png" alt="call-24pxcall"></button>
+    </div>
+    <div>
+        <button  class="elli2"><a href="#"></a></button>
+    </div>
+    <div>
+        <button class="elli3"><a href="#"></a></button>
+    </div>
+    <img class="texting" onclick="overlay()" src="https://i.ibb.co/DCrX7mw/chat-24px.png" alt="chat-24px">
+    <img class="request" src="https://i.ibb.co/sRK0xKB/icons8-request-money-96-1.png" alt="icons8-request-money-96-1">
+    
+    <section class="TD" style="overflow: scroll;">
+    </section>
+    <div class="overlay">
+        <div>
+            <li id="WA" onclick="sendW()"><img src="icons8-whatsapp-96 1.png" ><a>Whatsapp</a></li>
+            <hr>
+            <l id="SMS" onclick="message()"><span class="material-icons" style="font-size: 33px;">message</span><a>SMS</a></li>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        </script>
+
+    </div>
+    </div>
+
+
+
+    <footer>
+        <button class="green" onclick="youGiveCard()">You Got</button>
+        <button class="red" onclick="youGotCard()">You Gave</div></button>
+    </footer>
+</body>
+
+</html>
