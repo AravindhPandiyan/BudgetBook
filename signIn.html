@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="signIn.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="signIn.css" />
 
-  <title>sign in</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link href="http://allfont.net/allfont.css?fonts=league-spartan" rel="stylesheet" type="text/css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
-
+    <title>sign in</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="http://allfont.net/allfont.css?fonts=league-spartan" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
 </head>
+
 <body>
-  <div class="im"><img src="undraw_analysis_4jis 1.png" style="width:100%;height:100%"></div>
-  <span class="logo">&BILL</span>
-  <span class="head">Sign In</span>
-  
-  <input type="email" placeholder="enter username" class="ema" id="email">
-  <span class="mai"><i class="material-icons">
-    email
-  </i></span>
-  <input type="password" placeholder="enter your password" class="pass" id="password">
-  <span class="pa"><i class="material-icons">
-    compass_calibration
-  </i></span>
+    <div class="im">
+        <img src="undraw_analysis_4jis 1.png" style="width: 100%; height: 100%" />
+    </div>
+    <span class="logo">&BILL</span>
+    <span class="head">Sign In</span>
 
-  <button class="bu"  id="btnLogin">Sign in</button>
-  <button class="foot" onclick="signUp()">
-    + Create New Account
-  </button>
- <span onclick="forget()" class="forget">Forget Password</span>
-  <script src="signIn.js"></script>
-  <script src="index.js"></script>
-  <script>
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        var userID = firebase.auth().currentUser.uid;
-        firebase.database().ref('users/' + userID).once('value').then(function (snapshot) {
-          if (snapshot.val()) {
-            window.location.href = "homePage.html";
+    <input type="email" placeholder="enter username" class="ema" id="email" />
+    <span class="mai"><i class="material-icons"> email </i></span>
+    <input type="password" placeholder="enter your password" class="pass" id="password" />
+    <span class="pa"><i class="material-icons"> compass_calibration </i></span>
 
-          }
-          else {
-            window.location.href = "test.html";
-
-          }
+    <button class="bu" id="btnLogin">Sign in</button>
+    <button class="foot" onclick="signUp()">+ Create New Account</button>
+    <span onclick="forget()" class="forget">Forget Password</span>
+    <script src="signIn.js"></script>
+    <script src="index.js"></script>
+    <script>
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                var userID = firebase.auth().currentUser.uid;
+                firebase
+                    .database()
+                    .ref("users/" + userID)
+                    .once("value")
+                    .then(function (snapshot) {
+                        if (snapshot.val()) {
+                            window.location.href = "homePage.html";
+                        } else {
+                            window.location.href = "test.html";
+                        }
+                    });
+            }
         });
-
-
-
-      }
-
-    });
-  </script>
+    </script>
 </body>
+
 </html>
