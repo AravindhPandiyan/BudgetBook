@@ -1,60 +1,60 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin     : 0%;
-  border     : 0%;
+  margin: 0%;
+  border: 0%;
 }
 
 .im {
   position: fixed;
-  width   : 100%;
-  height  : 40.625%;
-  left    : 0px;
-  top     : 0px;
+  width: 100%;
+  height: 40.625%;
+  left: 0px;
+  top: 0px;
 }
 
 .logo {
-  position   : fixed;
-  width      : 46.37%;
-  height     : 6.808%;
-  left       : 32.125%;
-  top        : 16.067%;
+  position: fixed;
+  width: 46.37%;
+  height: 6.808%;
+  left: 32.125%;
+  top: 16.067%;
   font-family: "League Spartan Bold", arial;
-  font-style : normal;
+  font-style: normal;
   font-weight: bold;
-  font-size  : 48px;
+  font-size: 48px;
   line-height: 60px;
-  color      : #191919;
+  color: #191919;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .head {
-  position   : fixed;
-  width      : 23.188%;
-  height     : 5.2455%;
-  left       : 7.487%;
-  top        : 36.272%;
+  position: fixed;
+  width: 23.188%;
+  height: 5.2455%;
+  left: 7.487%;
+  top: 36.272%;
   font-family: "Poppins", sans-serif;
-  font-style : normal;
+  font-style: normal;
   font-weight: 600;
-  font-size  : 24px;
+  font-size: 24px;
   line-height: 36px;
-  color      : #000000;
+  color: #000000;
 }
 
 .cir {
-  position       : fixed;
-  /* width       : 130px;
+  position: fixed;
+  /* width     : 130px;
 height           : 130px;
 left             : 144px;
 top              : 62px; */
-  width          : 33.816%;
-  height         : 15.625%;
-  left           : 32.367;
-  top            : 5.8035%;
-  border-radius  : 140px;
-  background     : #ffffff;
-  border         : 9px solid;
-  border-color   : #ffcb21;
+  width: 33.816%;
+  height: 15.625%;
+  left: 32.367;
+  top: 5.8035%;
+  border-radius: 140px;
+  background: #ffffff;
+  border: 9px solid;
+  border-color: #ffcb21;
 }
 
 /* i{
@@ -64,128 +64,128 @@ right: 29.17%; */
 /* top: 55.078%;
 left: 14.4589%;  */
 .content {
-  position     : fixed;
-  width        : 91.062%;
-  height       : 47.544%;
-  left         : 4.347%;
-  top          : 14.397%;
-  background   : #ffffff;
+  position: fixed;
+  width: 91.062%;
+  height: 47.544%;
+  left: 4.347%;
+  top: 14.397%;
+  background: #ffffff;
   border-radius: 10px;
-  text-align   : center;
+  text-align: center;
 }
 
 .ema {
-  position          : fixed;
-  width             : 70.048%;
-  height            : 6.584%;
-  left              : 8.6956%;
-  top               : 42.7455%;
-  background        : #ffffff;
+  position: fixed;
+  width: 70.048%;
+  height: 6.584%;
+  left: 8.6956%;
+  top: 42.7455%;
+  background: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.04);
-  border-radius     : 15px;
-  outline           : none;
-  border            : none;
-  font-family       : "Poppins", sans-serif;
-  font-style        : normal;
-  font-weight       : 500;
-  font-size         : 18px;
-  line-height       : 27px;
-  padding-left      : 54px;
-  z-index           : 20;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  padding-left: 54px;
+  z-index: 20;
 }
 
 .pass {
-  position          : fixed;
-  width             : 70.048%;
-  height            : 6.5848%;
-  left              : 8.6956%;
-  top               : 52.901%;
-  background        : #ffffff;
+  position: fixed;
+  width: 70.048%;
+  height: 6.5848%;
+  left: 8.6956%;
+  top: 52.901%;
+  background: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.04);
-  border-radius     : 15px;
-  outline           : none;
-  border            : none;
-  font-family       : "Poppins", sans-serif;
-  font-style        : normal;
-  font-weight       : 500;
-  font-size         : 18px;
-  line-height       : 27px;
-  padding-left      : 54px;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  padding-left: 54px;
 }
 
 .mai {
   position: fixed;
-  left    : 13.8478%;
-  top     : 44.856%;
-  z-index : 20;
-  color   : black;
+  left: 13.8478%;
+  top: 44.856%;
+  z-index: 20;
+  color: black;
 }
 
 .pa {
   position: fixed;
-  left    : 13.8478%;
-  top     : 54.789%;
-  color   : black;
+  left: 13.8478%;
+  top: 54.789%;
+  color: black;
 }
 
 .bu {
-  position     : fixed;
-  width        : 83.574%;
-  height       : 5.6919%;
-  left         : 8.6956%;
-  top          : 64.285%;
-  background   : #000000;
+  position: fixed;
+  width: 83.574%;
+  height: 5.6919%;
+  left: 8.6956%;
+  top: 64.285%;
+  background: #000000;
   border-radius: 15px;
-  font-style   : normal;
-  font-weight  : 500;
-  font-size    : 18px;
-  line-height  : 27px;
-  text-align   : center;
-  color        : #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
 }
 
 .foot {
-  position     : fixed;
-  width        : 100%;
-  height       : 7.92%;
-  bottom       : 0%;
-  border       : none;
-  outline      : none;
-  background   : dodgerblue;
+  position: fixed;
+  width: 100%;
+  height: 7.92%;
+  bottom: 0%;
+  border: none;
+  outline: none;
+  background: dodgerblue;
   border-radius: 15px 15px 0px 0px;
-  font-style   : normal;
-  font-weight  : 600;
-  font-size    : 18px;
-  line-height  : 27px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
   /* identical to box height */
-  text-align   : center;
-  color        : #ffffff;
+  text-align: center;
+  color: #ffffff;
 }
 
 .new {
-  position  : absolute;
-  top       : 250px;
+  position: absolute;
+  top: 250px;
   text-align: center;
 }
 
 .forget {
-  position   : fixed;
-  width      : 18.5267%;
-  height     : 3.013%;
-  left       : 29.951%;
-  top        : 70.8705%;
+  position: fixed;
+  width: 18.5267%;
+  height: 3.013%;
+  left: 29.951%;
+  top: 70.8705%;
   font-family: Poppins;
-  font-style : normal;
+  font-style: normal;
   font-weight: 500;
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 27px;
   /* identical to box height */
-  text-align : center;
-  color      : #8f8f8f;
-  display    : inline-block;
+  text-align: center;
+  color: #8f8f8f;
+  display: inline-block;
   white-space: nowrap;
 }
-
 /*# sourceMappingURL=signIn.css.map */
