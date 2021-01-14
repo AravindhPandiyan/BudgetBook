@@ -46,6 +46,7 @@ function updatePassword1() {
 }
 
 function deleteUser() {
+    console.log('1');
   var user = firebase.auth().currentUser;
 
   user
@@ -56,4 +57,5 @@ function deleteUser() {
     .catch(function (error) {
       console.log(error);
     });
+    console.log('2');
 }
