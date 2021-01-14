@@ -16,4 +16,6 @@ function myFunction() {
   function addNumber()
   {
     window.location.href="addCustomer.html";
-  }
+}
+  
+

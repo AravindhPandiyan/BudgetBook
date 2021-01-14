@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>andbill</title>
-  <link rel="stylesheet" href="startUp.css"> 
+  <link rel="stylesheet" href="startUp.css">
   <link href="http://allfont.net/allfont.css?fonts=league-spartan" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
 </head>
+
 <body>
   <div class="splash">
     <span class="fade-in">&BILL</span>
   </div>
   <div class="welcome">
-  <div class="image">
-    <img src="undraw_mobile_pay_9abj 1.png" style="height:100%;wigth:100%;">
-  </div>
-  <div class="tex">
-    <span>Welcome to &BILL</span>
-  </div>
-  <div class="des">
-    <span>Connect with the customers in 
-      the way never before. Add
-      customers. keep them informed
-       about the dues and more</span>
-  </div>
-  
+    <div class="image">
+      <img src="undraw_mobile_pay_9abj 1.png" style="height:100%;wigth:100%;">
+    </div>
+    <div class="tex">
+      <span>Welcome to &BILL</span>
+    </div>
+    <div class="des">
+      <span>Connect with the customers in
+        the way never before. Add
+        customers. keep them informed
+        about the dues and more</span>
+    </div>
+
     <br>
     <button id="nxt" class="next">Next</button><br>
     <br>
-  <span class="skip"  onclick="next1()">skip</span>
+    <span class="skip" onclick="next1()">skip</span>
 
-  <div>
-    <span class="doth"></span>
-    <span class="dot1"></span>
-    <span class="dot2"></span>
+    <div>
+      <span class="doth"></span>
+      <span class="dot1"></span>
+      <span class="dot2"></span>
+    </div>
   </div>
-</div>
-<div class="moneytransfer">
- <div class="b1hk">
-   <div class="image">
-    <img src="undraw_pay_online_b1hk 1.png" style="height:100%;width:100%;">
-  </div>
-</div>
-  <div class="tex1">
-    <span>Money Transfer</span>
-  </div>
-  <div class="des1">
-    <span>Send and recieve money from 
-      <br>customers to to your bank 
-      <br>account</span>
+  <div class="moneytransfer">
+    <div class="b1hk">
+      <div class="image">
+        <img src="undraw_pay_online_b1hk 1.png" style="height:100%;width:100%;">
+      </div>
+    </div>
+    <div class="tex1">
+      <span>Money Transfer</span>
+    </div>
+    <div class="des1">
+      <span>Send and recieve money from
+        <br>customers to to your bank
+        <br>account</span>
       <br>
       <br>
-  </div>
-  
+    </div>
+
     <button id="nxt1" class="nxt1">Next<i class="material-icons">
-      keyboard_arrow_right
-    </i></button><br>
+        keyboard_arrow_right
+      </i></button><br>
     <br><span class="skip"><a onclick="next1()">skip</a></span>
 
 
-  <div class="circle">
-    <span class="dot11"></span>
-    <span class="doth1"></span>
-    <span class="dot22"></span>
+    <div class="circle">
+      <span class="dot11"></span>
+      <span class="doth1"></span>
+      <span class="dot22"></span>
+    </div>
   </div>
-</div>
-<div class="safeandsecure">
-  <div class="image">
-    <img src="undraw_two_factor_authentication_namy 1.png" style="height:100%;width:100%;">
-  </div>
-  <div class="tex2">
-    <span>Safe And Secure</span>
-  </div>
-  <div class="des2">
-    <span>Your informations and the
-      <br> transaction made in this app is
-      <br> safe with us</span>
+  <div class="safeandsecure">
+    <div class="image">
+      <img src="undraw_two_factor_authentication_namy 1.png" style="height:100%;width:100%;">
+    </div>
+    <div class="tex2">
+      <span>Safe And Secure</span>
+    </div>
+    <div class="des2">
+      <span>Your informations and the
+        <br> transaction made in this app is
+        <br> safe with us</span>
       <br>
       <br>
-  </div>
-  
-    <button id="nxt2" class="gets">Get Started</button><br>
-  
+    </div>
 
-  <div class="circle">
-    <span class="dot12"></span>
-    <span class="dot21"></span>
-    <span class="doth2"></span>
+    <button id="nxt2" class="gets">Get Started</button><br>
+
+
+    <div class="circle">
+      <span class="dot12"></span>
+      <span class="dot21"></span>
+      <span class="doth2"></span>
+    </div>
   </div>
-</div>
   <script src="startUp.js"></script>
   <script src="index.js"></script>
   <script>
@@ -121,4 +125,5 @@
     });
   </script>
 </body>
+
 </html>
