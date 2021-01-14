@@ -10,15 +10,15 @@
 // };
 
 {
-  var firebaseConfig = {
-    apiKey: "AIzaSyDgUUIHD6UwZeCWBhTCKwRrQHFPJ52Hx50",
-    authDomain: "test-43ec4.firebaseapp.com",
-    databaseURL: "https://test-43ec4-default-rtdb.firebaseio.com",
-    projectId: "test-43ec4",
-    storageBucket: "test-43ec4.appspot.com",
-    messagingSenderId: "565784590814",
-    appId: "1:565784590814:web:50fdadecac959ef62fc54f",
-    // measurementId: "G-P28CKTBFR5"
+  const firebaseConfig = {
+    apiKey: "AIzaSyC6-k7chcAQ8ZeWvjpuZFz0YI9Hc78gNzU",
+    authDomain: "budgetbook-6b708.firebaseapp.com",
+    databaseURL: "https://budgetbook-6b708-default-rtdb.europe-west1.firebasedatabase.app/",
+    projectId: "budgetbook-6b708",
+    storageBucket: "budgetbook-6b708.appspot.com",
+    messagingSenderId: "879320505239",
+    appId: "1:879320505239:web:f80553ee16ee70593bc2d2",
+    measurementId: "G-NTVZWE983W"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
