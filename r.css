@@ -1,179 +1,178 @@
 body {
   font-family: 'Poppins', sans-serif;
-  padding    : 0%;
-  margin     : 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
 .rectangle {
-  position          : fixed;
-  width             : 100%;
-  height            : 100px;
-  left              : 0px;
-  top               : 97px;
-  background        : #FFFFFF;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 97px;
+  background: #FFFFFF;
   -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
-  box-shadow        : 0px -4px 4px rgba(0, 0, 0, 0.05);
-  border-radius     : 25px;
+          box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
 }
 
 .green {
-  position          : absolute;
-  width             : 159px;
-  height            : 52px;
-  left              : 5%;
-  top               : 139px;
-  background        : #FFFFFF;
-  border            : 2px solid red;
+  position: absolute;
+  width: 159px;
+  height: 52px;
+  left: 5%;
+  top: 139px;
+  background: #FFFFFF;
+  border: 2px solid red;
   -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius     : 25px;
-  outline           : none;
-  color             : red;
-  cursor            : pointer;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  outline: none;
+  color: red;
+  cursor: pointer;
 }
 
 .green:hover {
   background-color: red;
-  color           : white;
+  color: white;
 }
 
 .name {
-  position   : absolute;
-  width      : 139px;
-  height     : 36px;
-  left       : 58.21%;
-  top        : 143px;
-  font-size  : 24px;
+  position: absolute;
+  width: 139px;
+  height: 36px;
+  left: 58.21%;
+  top: 143px;
+  font-size: 24px;
   line-height: 36px;
-  color      : #000000;
-  display    : inline-block;
+  color: #000000;
+  display: inline-block;
   white-space: nowrap;
   font-weight: bold;
 }
 
 .input {
-  position          : absolute;
-  width             : 90%;
-  height            : 63px;
-  left              : 5.2%;
-  top               : 219px;
-  background        : #FFFFFF;
-  border            : 1px solid #E9DFDF;
+  position: absolute;
+  width: 90%;
+  height: 63px;
+  left: 5.2%;
+  top: 219px;
+  background: #FFFFFF;
+  border: 1px solid #E9DFDF;
   -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
-  box-shadow        : 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
-  border-radius     : 15px;
-  outline           : none;
-  font-size         : 20px;
-  padding-left      : 51px;
+          box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 51px;
 }
 
 .input2 {
-  outline           : none;
-  position          : absolute;
-  width             : 90%;
-  height            : 63px;
-  left              : 5.2%;
-  top               : 326px;
-  background        : #FFFFFF;
-  border            : 1px solid #E9DFDF;
+  outline: none;
+  position: absolute;
+  width: 90%;
+  height: 63px;
+  left: 5.2%;
+  top: 326px;
+  background: #FFFFFF;
+  border: 1px solid #E9DFDF;
   -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
-  box-shadow        : 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
-  border-radius     : 15px;
-  font-size         : 20px;
-  padding-left      : 19px;
+          box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  font-size: 20px;
+  padding-left: 19px;
 }
 
 .save {
-  position          : absolute;
-  width             : 90%;
-  height            : 63px;
-  left              : 5.2%;
-  top               : 539px;
-  border            : none;
-  outline           : none;
-  background        : #FFFFFF;
-  border            : 3px solid red;
+  position: absolute;
+  width: 90%;
+  height: 63px;
+  left: 5.2%;
+  top: 539px;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  border: 3px solid red;
   -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
-  color             : red;
-  border-radius     : 15px;
+          box-sizing: border-box;
+  color: red;
+  border-radius: 15px;
 }
 
 .save:hover {
   background-color: red;
-  color           : white;
+  color: white;
 }
 
 .rect {
-  position     : absolute;
-  width        : 144px;
-  height       : 30px;
-  left         : 5.2%;
-  top          : 431px;
-  background   : #5F6368;
+  position: absolute;
+  width: 144px;
+  height: 30px;
+  left: 5.2%;
+  top: 431px;
+  background: #5F6368;
   border-radius: 10px;
-  color        : #FFFFFF;
-  margin       : none;
-  padding-left : 40px;
-  border       : none;
-  outline      : none;
+  color: #FFFFFF;
+  margin: none;
+  padding-left: 40px;
+  border: none;
+  outline: none;
 }
 
 .img {
-  position  : fixed;
-  left      : 83.81%;
-  top       : 431px;
+  position: fixed;
+  left: 83.81%;
+  top: 431px;
   background: white;
 }
 
 .back {
-  position   : absolute;
-  left       : 21px;
-  top        : 10px;
-  border     : none;
-  outline    : none;
+  position: absolute;
+  left: 21px;
+  top: 10px;
+  border: none;
+  outline: none;
   font-weight: bold;
 }
 
 .button {
-  position         : absolute;
+  position: absolute;
   -webkit-transform: translate(-50%, -50%);
-  transform        : translate(-50%, -50%);
-  width            : 90px;
-  background-color : transparent;
-  color            : black;
-  height           : 45px;
-  left             : 51px;
-  top              : 50px;
-  font-style       : normal;
-  font-weight      : normal;
-  font-size        : 24px;
-  line-height      : 28px;
-  border           : none;
-  outline          : none;
-  cursor           : pointer;
-  color            : #000000;
-  border-radius    : 25px;
+          transform: translate(-50%, -50%);
+  width: 90px;
+  background-color: transparent;
+  color: black;
+  height: 45px;
+  left: 51px;
+  top: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #000000;
+  border-radius: 25px;
 }
 
 .material-icons {
   position: absolute;
-  top     : 10px;
-  left    : 3px;
+  top: 10px;
+  left: 3px;
 }
 
 .material-icons.i {
-  color   : white;
-  z-index : 20;
+  color: white;
+  z-index: 20;
   position: absolute;
-  top     : 434px;
-  left    : 7%;
+  top: 434px;
+  left: 7%;
 }
-
 /*# sourceMappingURL=r.css.map */

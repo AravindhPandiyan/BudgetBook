@@ -361,9 +361,14 @@ footer {
 }
 
 .overlay div hr {
-  width : 73.91%;
-  height: 0px;
-  border: 1px solid rgba(0, 0, 0, 0.14);
+  position         : fixed;
+  top              : 36%;
+  left             : 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform        : translate(-50%, 0);
+  width            : 73%;
+  height           : 0px;
+  border           : 1px solid rgba(0, 0, 0, 0.14);
 }
 
 #WA img {
