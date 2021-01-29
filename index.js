@@ -978,7 +978,7 @@ function deleteUser() {
   user
     .delete()
     .then(function () {
-      // User deleted.
+      window.location.href = "index.html";
     })
     .catch(function (error) {
       console.log(error);
