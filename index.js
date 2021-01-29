@@ -453,12 +453,12 @@
         var cnumber = customer[key].cnumber;
         var settlement = customer[key].settlement;
       }
-      // var message="Payment Reminder from bname for "+cname+".\nPayment of rupees "+settlement+" is pending.We request you to clear the dues as soon as possible.-sent via &bills.com";
+      // var message="Payment Reminder from bname for "+cname+".\nPayment of rupees "+settlement+" is pending.We request you to clear the dues as soon as possible.-sent via LEDGITs.com";
       if (cnumber != null) {
         if (settlement < 0) {
           settlement = settlement * -1;
         }
-        window.location.href = 'https://api.whatsapp.com/send?phone=' + cnumber + '&text=%20' + encodeURIComponent("Payment Reminder for " + cname + ".\nPayment of rupees " + settlement + " is pending.We request you to clear the dues as soon as possible.\n-sent via &bills.com");
+        window.location.href = 'https://api.whatsapp.com/send?phone=' + cnumber + '&text=%20' + encodeURIComponent("Payment Reminder for " + cname + ".\nPayment of rupees " + settlement + " is pending.We request you to clear the dues as soon as possible.\n-sent via LEDGITs.com");
       }
     }, errorData);
   }
@@ -822,12 +822,12 @@
         var cnumber = customer[key].cnumber;
         var settlement = customer[key].settlement;
       }
-      var message = "Payment Reminder from bname for " + cname + ".Payment of rupees " + settlement + " is pending.We request you to clear the dues as soon as possible.-sent via &bills.com";
+      var message = "Payment Reminder from bname for " + cname + ".Payment of rupees " + settlement + " is pending.We request you to clear the dues as soon as possible.-sent via LEDGITs.com";
       if (cnumber != null) {
         if (settlement < 0) {
           settlement = settlement * -1;
         }
-        window.location.href = 'sms:' + cnumber + '?&body=' + "Payment Reminder for " + cname + ".\nPayment of rupees " + settlement + " is pending.We request you to clear the dues as soon as possible.\n-sent via &bills.com";
+        window.location.href = 'sms:' + cnumber + '?&body=' + "Payment Reminder for " + cname + ".\nPayment of rupees " + settlement + " is pending.We request you to clear the dues as soon as possible.\n-sent via LEDGITs.com";
       }
     }, errorData);
   }
