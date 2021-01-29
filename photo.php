@@ -8,10 +8,12 @@
     <title>Documnet</title>
     <link rel='stylesheet' href='https://foliotek.github.io/Croppie/croppie.css'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <?php
+    echo '
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>'; ?>
     <style>
       body {
         font-family: 'Poppins';
@@ -100,20 +102,27 @@
     <!-- <button id="showResult">show result</button> -->
   </div>
 </body>
+
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 <script src='https://foliotek.github.io/Croppie/croppie.js'></script>
 <script>
-
   function goback() {
     var id = location.search.substring(0);
     var id1 = id.slice(1);
-    window.location.href = "transaction.html?" + id1;
+    window.location.href = 'transaction.html?' + id1;
   }
-  var basic = $("#main-cropper").croppie({
-    viewport: { width: 300, height: 300, type: 'circle' },
-    boundary: { width: 300, height: 300 },
+  var basic = $('#main-cropper').croppie({
+    viewport: {
+      width: 300,
+      height: 300,
+      type: 'circle'
+    },
+    boundary: {
+      width: 300,
+      height: 300
+    },
     showZoomer: true,
-    url: "",
+    url: '',
     enableExif: true
 
   });
@@ -122,8 +131,8 @@
     if (input.files && input.files[0]) {
       var reader = new FileReader();
 
-      reader.onload = function (e) {
-        $("#main-cropper").croppie("bind", {
+      reader.onload = function(e) {
+        $('#main-cropper').croppie('bind', {
           url: e.target.result
         });
 
@@ -133,16 +142,19 @@
     }
   }
 
-  $(".actionUpload input").on("change", function () {
+  $('.actionUpload input').on('change', function() {
     readFile(this);
   });
-  $(".actionDone").on("click", function () {
-    $(".actionDone").toggle();
-    $(".actionUpload").toggle();
+  $('.actionDone').on('click', function() {
+    $('.actionDone').toggle();
+    $('.actionUpload').toggle();
   });
-
-
 </script>
-<script src="index.js"></script>
+
+<?php
+
+echo "
+<script src='index.js'></script>";
+?>
 
 </html>

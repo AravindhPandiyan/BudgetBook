@@ -1,14 +1,3 @@
-// Your web app's Firebase configuration
-// var firebaseConfig = {
-//   apiKey: "AIzaSyDGsyzrJ7DuMIy_Hm9KPl8Mes42m__XWvg",
-//   authDomain: "andpay-a1955.firebaseapp.com",
-//   databaseURL: "https://andpay-a1955.firebaseio.com",
-//   projectId: "andpay-a1955",
-//   storageBucket: "andpay-a1955.appspot.com",
-//   messagingSenderId: "909215409377",
-//   appId: "1:909215409377:web:528eb63cdc8639780403a0"
-// };
-
 {
   const firebaseConfig = {
     apiKey: "AIzaSyC6-k7chcAQ8ZeWvjpuZFz0YI9Hc78gNzU",
