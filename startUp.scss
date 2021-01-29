@@ -258,7 +258,8 @@ i {
     position    : fixed;
     /* width    : 5.5vw;
   height        : 1.89vh; */
-    /* left     : 50vw; */
+    left        : 50%;
+    transform   : translate(-50%, -50%);
     /* top      : 82.36vh;  */
     bottom      : 15.7366vh;
     font-style  : normal;
@@ -441,23 +442,14 @@ i {
     top     : 91.74%;
 
     border-radius: 14px;
-    background   : #ffcb21;
+    background   : dodgerblue;
 }
 
 .next i {
-    position: absolute;
-    left    : 24.154%;
-    right   : 4.205%;
-    top     : 26.72%;
-    bottom  : 26.72%;
-
-}
-
-.nxt1 i {
-    position: fixed;
-    left    : 24.154%;
-    right   : 4.205%;
-    top     : 26.72%;
-    bottom  : 26.72%;
+    position : absolute;
+    left     : 50%;
+    top      : 26.72%;
+    bottom   : 26.72%;
+    transform: translate(-50%, -50%);
 
 }

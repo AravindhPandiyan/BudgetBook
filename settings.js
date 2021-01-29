@@ -45,17 +45,17 @@ function updatePassword1() {
   }
 }
 
-function deleteUser() {
-    console.log('1');
-  var user = firebase.auth().currentUser;
+// function deleteUser() {
+//     console.log('1');
+//   var user = firebase.auth().currentUser;
 
-  user
-    .delete()
-    .then(function () {
-      console.log("user is deleted");
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-    console.log('2');
-}
+//   user
+//     .delete()
+//     .then(function () {
+//       console.log("user is deleted");
+//     })
+//     .catch(function (error) {
+//       console.log(error);
+//     });
+//     console.log('2');
+// }

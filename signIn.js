@@ -1,4 +1,3 @@
-function signUp()
-{
-  window.location.href="signUp.html";
+function signUp() {
+  window.location.href = "signUp.html";
 }

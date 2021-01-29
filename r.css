@@ -1,162 +1,179 @@
-body{
-    font-family: 'Poppins', sans-serif;
-    padding:0%;
-    margin: 0%;
+body {
+  font-family: 'Poppins', sans-serif;
+  padding    : 0%;
+  margin     : 0%;
 }
-.rectangle{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    left: 0%;
-    top: 10.8%;
-    background: #FFFFFF;
-    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 25px;
+
+.rectangle {
+  position          : fixed;
+  width             : 100%;
+  height            : 100px;
+  left              : 0px;
+  top               : 97px;
+  background        : #FFFFFF;
+  -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
+  box-shadow        : 0px -4px 4px rgba(0, 0, 0, 0.05);
+  border-radius     : 25px;
 }
-.green{
-    position: absolute;
-    width: 38.45%;
-    height: 8.2%;
-    left: 5%;
-    top: 15.51%;
-    background: #FFFFFF;
-    border: 2px solid #FC0D1C;;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
-    outline: none;
-    font-family: poppins;
-    color: #FC0D1C;;
-    cursor: pointer;
+
+.green {
+  position          : absolute;
+  width             : 159px;
+  height            : 52px;
+  left              : 5%;
+  top               : 139px;
+  background        : #FFFFFF;
+  border            : 2px solid red;
+  -webkit-box-sizing: border-box;
+  box-sizing        : border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius     : 25px;
+  outline           : none;
+  color             : red;
+  cursor            : pointer;
 }
-.green:hover{
-    background-color:#FC0D1C;;
-    color: white;
+
+.green:hover {
+  background-color: red;
+  color           : white;
 }
-.name{
-    position: absolute;
-    width: 33.57%;
-    height: 4%;
-    left: 58.21%;
-    top: 15.95%;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
-    display: inline-block;
-    white-space: nowrap;
-  }
-.input{
-    position: absolute;
-    width: 90%;
-    height: 10%;
-    left: 5.2%;
-    top: 30.41%;
-    background: #FFFFFF;
-    border: 1px solid #E9DFDF;
-    box-sizing: border-box;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 15px;
-    outline: none;
-    font-size: 20px;
-    padding-left: 51px;
+
+.name {
+  position   : absolute;
+  width      : 139px;
+  height     : 36px;
+  left       : 58.21%;
+  top        : 143px;
+  font-size  : 24px;
+  line-height: 36px;
+  color      : #000000;
+  display    : inline-block;
+  white-space: nowrap;
+  font-weight: bold;
 }
-.input2{
-    
-    outline: none;
-    position: absolute;
-    width: 90%;
-    height: 10%;
-    left: 5.2%;
-    top: 43%;
-background: #FFFFFF;
-border: 1px solid #E9DFDF;
-box-sizing: border-box;
-box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
-border-radius: 15px; 
-padding-left: 19px;
-font-size: 20px;
+
+.input {
+  position          : absolute;
+  width             : 90%;
+  height            : 63px;
+  left              : 5.2%;
+  top               : 219px;
+  background        : #FFFFFF;
+  border            : 1px solid #E9DFDF;
+  -webkit-box-sizing: border-box;
+  box-sizing        : border-box;
+  -webkit-box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  box-shadow        : 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius     : 15px;
+  outline           : none;
+  font-size         : 20px;
+  padding-left      : 51px;
 }
-.save{
-    position: absolute;
-width: 90%;
-height: 10%;
-left: 5.2%;
-top: 75.15%;
-border:none;
-outline: none;
-background: #FFFFFF;
-border: 3px solid #FC0D1C;;
-box-sizing: border-box;
-color:#FC0D1C;;
-border-radius: 15px;
-font-family: poppins;
+
+.input2 {
+  outline           : none;
+  position          : absolute;
+  width             : 90%;
+  height            : 63px;
+  left              : 5.2%;
+  top               : 326px;
+  background        : #FFFFFF;
+  border            : 1px solid #E9DFDF;
+  -webkit-box-sizing: border-box;
+  box-sizing        : border-box;
+  -webkit-box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  box-shadow        : 0px -2px 4px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius     : 15px;
+  font-size         : 20px;
+  padding-left      : 19px;
 }
-.save:hover{
-    background-color:#FC0D1C;
-    color: white;
+
+.save {
+  position          : absolute;
+  width             : 90%;
+  height            : 63px;
+  left              : 5.2%;
+  top               : 539px;
+  border            : none;
+  outline           : none;
+  background        : #FFFFFF;
+  border            : 3px solid red;
+  -webkit-box-sizing: border-box;
+  box-sizing        : border-box;
+  color             : red;
+  border-radius     : 15px;
 }
-.rect{
-    position: absolute;
-width: 34%;
-height: 5%;
-left: 5.2%;
-top: 60%;
-background: #5F6368;
-border-radius: 10px;
-color: #FFFFFF;
-margin: none;
-padding-left: 40px;
-border:none;
-outline:none;
+
+.save:hover {
+  background-color: red;
+  color           : white;
 }
-.img{
-    position: absolute;
-left: 83.81%;
-top: 60%;
-background: white;
+
+.rect {
+  position     : absolute;
+  width        : 144px;
+  height       : 30px;
+  left         : 5.2%;
+  top          : 431px;
+  background   : #5F6368;
+  border-radius: 10px;
+  color        : #FFFFFF;
+  margin       : none;
+  padding-left : 40px;
+  border       : none;
+  outline      : none;
 }
-.back{
-    position: absolute;
-    left: 21px;
-    top:10px;
-    border: none;
-    outline:none;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+
+.img {
+  position  : fixed;
+  left      : 83.81%;
+  top       : 431px;
+  background: white;
 }
+
+.back {
+  position   : absolute;
+  left       : 21px;
+  top        : 10px;
+  border     : none;
+  outline    : none;
+  font-weight: bold;
+}
+
 .button {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 21.73%;
-    background-color: white;
-    color: black;
-    height: 45px;
-    left: 51px;
-    top: 50px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: #000000;
-    border-radius: 25px;
-  }
-  
-  .material-icons{
-    position: absolute;
-    top:10px;
-    left: 3px;
+  position         : absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform        : translate(-50%, -50%);
+  width            : 90px;
+  background-color : transparent;
+  color            : black;
+  height           : 45px;
+  left             : 51px;
+  top              : 50px;
+  font-style       : normal;
+  font-weight      : normal;
+  font-size        : 24px;
+  line-height      : 28px;
+  border           : none;
+  outline          : none;
+  cursor           : pointer;
+  color            : #000000;
+  border-radius    : 25px;
 }
-.material-icons.i{
-    color: white;
-    z-index: 20;
-    position: absolute;
-    top: 434px;
-    left:7%;
+
+.material-icons {
+  position: absolute;
+  top     : 10px;
+  left    : 3px;
 }
+
+.material-icons.i {
+  color   : white;
+  z-index : 20;
+  position: absolute;
+  top     : 434px;
+  left    : 7%;
+}
+
+/*# sourceMappingURL=r.css.map */
