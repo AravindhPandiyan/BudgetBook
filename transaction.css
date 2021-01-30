@@ -3,296 +3,296 @@ body {
 }
 
 footer {
-  position          : absolute;
-  width             : 100%;
-  height            : 11.16%;
-  left              : 0px;
-  bottom            : 0px;
-  z-index           : 20;
-  background        : #FFFFFF;
+  position: absolute;
+  width: 100%;
+  height: 11.16%;
+  left: 0px;
+  bottom: 0px;
+  z-index: 20;
+  background: #FFFFFF;
   -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
-  box-shadow        : 0px -4px 4px rgba(0, 0, 0, 0.05);
-  border-radius     : 25px;
+          box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
 }
 
 .green {
-  position          : absolute;
-  width             : 26.57%;
-  height            : 5.803vh;
-  left              : 13.28%;
-  top               : 20.79%;
-  background        : #FFFFFF;
-  border            : 2px solid #4CA90C;
+  position: absolute;
+  width: 26.57%;
+  height: 5.803vh;
+  left: 13.28%;
+  top: 20.79%;
+  background: #FFFFFF;
+  border: 2px solid #4CA90C;
   -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius     : 25px;
-  outline           : none;
-  cursor            : pointer;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
 }
 
 .green:hover {
   background-color: #4CA90C;
-  color           : white;
+  color: white;
 }
 
 .red {
-  position          : absolute;
-  width             : 26.57%;
-  height            : 5.803vh;
-  left              : 60.38%;
-  top               : 20.79%;
-  background        : #FFFFFF;
-  border            : 2px solid #FC0D1C;
+  position: absolute;
+  width: 26.57%;
+  height: 5.803vh;
+  left: 60.38%;
+  top: 20.79%;
+  background: #FFFFFF;
+  border: 2px solid #FC0D1C;
   -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius     : 25px;
-  outline           : none;
-  cursor            : pointer;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
 }
 
 .red:hover {
   background-color: #FC0D1C;
-  color           : white;
+  color: white;
 }
 
 .material-icons {
   position: absolute;
-  top     : 25.11%;
-  left    : .0724%;
+  top: 25.11%;
+  left: .0724%;
 }
 
 .button {
-  position         : absolute;
+  position: absolute;
   -webkit-transform: translate(-50%, -50%);
-  transform        : translate(-50%, -50%);
-  width            : 21.73%;
-  background-color : transparent;
-  color            : black;
-  height           : 5.02%;
-  left             : 12.31%;
-  top              : 5.35%;
-  font-family      : 'Roboto';
-  font-style       : normal;
-  font-size        : 24px;
-  line-height      : 28px;
-  border           : none;
-  outline          : none;
-  cursor           : pointer;
-  color            : #000000;
-  border-radius    : 25px;
+          transform: translate(-50%, -50%);
+  width: 21.73%;
+  background-color: transparent;
+  color: black;
+  height: 5.02%;
+  left: 12.31%;
+  top: 5.35%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #000000;
+  border-radius: 25px;
 }
 
 .back {
   position: relative;
-  left    : 8.0%;
-  top     : 1.11%;
-  border  : none;
-  outline : none;
+  left: 8.0%;
+  top: 1.11%;
+  border: none;
+  outline: none;
 }
 
 .container {
-  position          : absolute;
-  width             : 100%;
-  height            : 25.66%;
-  left              : 0px;
-  top               : 15.73%;
-  background        : #EAEAEA;
+  position: absolute;
+  width: 100%;
+  height: 25.66%;
+  left: 0px;
+  top: 15.73%;
+  background: #EAEAEA;
   -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.13);
-  box-shadow        : 0px -4px 4px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.13);
-  border-radius     : 25px;
+          box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 25px;
 }
 
 .ellipse {
-  position          : absolute;
-  width             : 27.77%;
-  height            : 12.83%;
-  left              : 6.76%;
-  top               : 10.49%;
-  border-radius     : 100px;
-  background        : #FFFFFF;
+  position: absolute;
+  width: 27.77%;
+  height: 12.83%;
+  left: 6.76%;
+  top: 10.49%;
+  border-radius: 100px;
+  background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .circle {
-  position     : absolute;
-  width        : 23.67%;
-  height       : 10.93%;
+  position: absolute;
+  width: 23.67%;
+  height: 10.93%;
   border-radius: 100px;
-  left         : 8.93%;
-  top          : 11.49%;
-  background   : url(.jpg), #C4C4C4;
+  left: 8.93%;
+  top: 11.49%;
+  background: url(.jpg), #C4C4C4;
 }
 
 .bar {
-  position          : absolute;
-  width             : 100%;
-  height            : 7.812%;
-  left              : 0px;
-  top               : 36.71%;
-  background        : #FFFFFF;
-  border            : 3px solid rgba(0, 0, 0, 0.13);
+  position: absolute;
+  width: 100%;
+  height: 7.812%;
+  left: 0px;
+  top: 36.71%;
+  background: #FFFFFF;
+  border: 3px solid rgba(0, 0, 0, 0.13);
   -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
-  border-radius     : 15px;
+          box-sizing: border-box;
+  border-radius: 15px;
   -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.13);
-  box-shadow        : 0px -4px 4px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.13);
 }
 
 .bartext {
-  position   : absolute;
-  width      : 55.55%;
-  height     : 3.01%;
-  left       : 21.73%;
-  top        : 39.06%;
-  font-style : normal;
+  position: absolute;
+  width: 55.55%;
+  height: 3.01%;
+  left: 21.73%;
+  top: 39.06%;
+  font-style: normal;
   font-weight: 500;
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 27px;
-  color      : #666666;
-  display    : inline-block;
-  z-index    : 0;
+  color: #666666;
+  display: inline-block;
+  z-index: 0;
   white-space: nowrap;
 }
 
 .bar input {
   background-color: #000000;
-  z-index         : 20;
-  width           : 100%;
-  height          : 100%;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
 }
 
 .cal1 {
-  position  : absolute;
-  left      : 15.7%;
-  top       : 39.06%;
+  position: absolute;
+  left: 15.7%;
+  top: 39.06%;
   background: #ffffff;
 }
 
 .elli1 {
-  position          : absolute;
-  width             : 12.8%;
-  height            : 5.91%;
-  left              : 6.28%;
-  top               : 27.12%;
-  border-radius     : 100px;
-  border            : none;
-  outline           : none;
-  cursor            : pointer;
-  background        : #FFFFFF;
+  position: absolute;
+  width: 12.8%;
+  height: 5.91%;
+  left: 6.28%;
+  top: 27.12%;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .elli2 {
-  position          : absolute;
-  width             : 12.80%;
-  height            : 5.91%;
-  left              : 21.73%;
-  border            : none;
-  outline           : none;
-  cursor            : pointer;
-  top               : 27.23%;
-  border-radius     : 100px;
-  background        : #FFFFFF;
+  position: absolute;
+  width: 12.80%;
+  height: 5.91%;
+  left: 21.73%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  top: 27.23%;
+  border-radius: 100px;
+  background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .elli3 {
-  position          : absolute;
-  width             : 12.8%;
-  height            : 5.91%;
-  left              : 37.19%;
-  top               : 27.23%;
-  background        : #FFFFFF;
-  border-radius     : 100px;
+  position: absolute;
+  width: 12.8%;
+  height: 5.91%;
+  left: 37.19%;
+  top: 27.23%;
+  background: #FFFFFF;
+  border-radius: 100px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
-  box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.11);
-  border            : none;
-  outline           : none;
-  cursor            : pointer;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .call {
-  position         : absolute;
-  left             : 9.66%;
-  top              : 28.79%;
-  font-size        : 37px;
-  background       : transparent;
+  position: absolute;
+  left: 9.66%;
+  top: 28.79%;
+  font-size: 37px;
+  background: transparent;
   -webkit-transform: translateX(30%);
-  transform        : translateX(30%);
+          transform: translateX(30%);
 }
 
 .texting {
-  position  : absolute;
-  left      : 24.63%;
-  top       : 28.79%;
-  font-size : 37px;
+  position: absolute;
+  left: 24.63%;
+  top: 28.79%;
+  font-size: 37px;
   background: transparent;
 }
 
 .request {
-  position  : absolute;
-  width     : 8.93%;
-  font-size : 37px;
-  left      : 39.13%;
-  top       : 28.45%;
+  position: absolute;
+  width: 8.93%;
+  font-size: 37px;
+  left: 39.13%;
+  top: 28.45%;
   background: transparent;
 }
 
 .name {
-  position   : absolute;
-  width      : 33.57%;
-  height     : 0px;
-  left       : 57.48%;
-  top        : 5.58vh;
-  font-style : normal;
+  position: absolute;
+  width: 33.57%;
+  height: 0px;
+  left: 57.48%;
+  top: 5.58vh;
+  font-style: normal;
   font-weight: bold;
-  font-size  : 24px;
+  font-size: 24px;
   line-height: 36px;
-  display    : inline-block;
+  display: inline-block;
   white-space: nowrap;
-  color      : #000000;
+  color: #000000;
 }
 
 .phone {
-  position   : absolute;
-  width      : 29.46%;
-  height     : 3.01%;
-  left       : 57.48%;
-  top        : 10.044vh;
-  font-style : normal;
+  position: absolute;
+  width: 29.46%;
+  height: 3.01%;
+  left: 57.48%;
+  top: 10.044vh;
+  font-style: normal;
   font-weight: 500;
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 27px;
-  color      : #000000;
-  display    : inline-block;
+  color: #000000;
+  display: inline-block;
   white-space: nowrap;
 }
 
 .material-icons.i {
   position: absolute;
-  left    : 105.19%;
-  top     : 0.22%;
+  left: 105.19%;
+  top: 0.22%;
 }
 
 .youget {
-  position   : absolute;
-  width      : 20.04%;
+  position: absolute;
+  width: 20.04%;
   /* height  : 2.34%; */
-  left       : 57.48%;
-  top        : 13.39vh;
-  font-style : normal;
+  left: 57.48%;
+  top: 13.39vh;
+  font-style: normal;
   font-weight: 500;
-  font-size  : 14px;
+  font-size: 14px;
   line-height: 21px;
-  color      : #000000;
-  display    : inline-block;
+  color: #000000;
+  display: inline-block;
   white-space: nowrap;
 }
 
@@ -301,59 +301,59 @@ footer {
 }
 
 #over {
-  position               : fixed;
-  display                : none;
-  width                  : 100%;
-  height                 : 100%;
-  top                    : 0;
-  left                   : 0;
-  right                  : 0;
-  bottom                 : 0;
-  background-color       : rgba(0, 0, 0, 0.5);
-  z-index                : 2;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter        : blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .TD {
-  position          : absolute;
-  width             : 100%;
-  height            : 47.09%;
-  left              : 0px;
-  top               : 44.53%;
+  position: absolute;
+  width: 100%;
+  height: 47.09%;
+  left: 0px;
+  top: 44.53%;
   -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
+          box-sizing: border-box;
 }
 
 .overlay {
-  position               : fixed;
-  display                : none;
-  width                  : 100%;
-  height                 : 100%;
-  top                    : 0;
-  left                   : 0;
-  right                  : 0;
-  bottom                 : 0;
-  background             : rgba(25, 25, 25, 0.38);
-  z-index                : 21;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(25, 25, 25, 0.38);
+  z-index: 21;
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter        : blur(10px);
-  -webkit-transition     : 1s;
-  transition             : 1s;
-  list-style             : none;
+          backdrop-filter: blur(10px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  list-style: none;
 }
 
 .overlay div {
-  position          : absolute;
-  width             : 80.67%;
-  height            : 20.75%;
-  left              : 9.66%;
-  top               : 26.56%;
-  background        : #FFFFFF;
-  border            : none;
+  position: absolute;
+  width: 80.67%;
+  height: 20.75%;
+  left: 9.66%;
+  top: 26.56%;
+  background: #FFFFFF;
+  border: none;
   -webkit-box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.58);
-  box-shadow        : 0px 4px 4px rgba(196, 196, 196, 0.58);
-  border-radius     : 25px;
+          box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.58);
+  border-radius: 25px;
 }
 
 .overlay div li {
@@ -361,93 +361,93 @@ footer {
 }
 
 .overlay div hr {
-  position         : fixed;
-  top              : 36%;
-  left             : 50%;
+  position: fixed;
+  top: 36%;
+  left: 50%;
   -webkit-transform: translate(-50%, 0);
-  transform        : translate(-50%, 0);
-  width            : 73%;
-  height           : 0px;
-  border           : 1px solid rgba(0, 0, 0, 0.14);
+          transform: translate(-50%, 0);
+  width: 73%;
+  height: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
 #WA img {
   position: fixed;
-  width   : 8.93%;
-  height  : 4.12%;
-  left    : 31.64%;
-  top     : 31.13%;
+  width: 8.93%;
+  height: 4.12%;
+  left: 31.64%;
+  top: 31.13%;
 }
 
 #WA a {
-  position   : fixed;
-  width      : 22.94%;
-  height     : 3.01%;
-  left       : 43.47%;
-  top        : 31.80%;
-  font-style : normal;
+  position: fixed;
+  width: 22.94%;
+  height: 3.01%;
+  left: 43.47%;
+  top: 31.80%;
+  font-style: normal;
   font-weight: 500;
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 27px;
-  color      : #191919;
+  color: #191919;
 }
 
 #SMS span {
   position: fixed;
-  width   : 7.97%;
-  height  : 3.68%;
-  left    : 31.64%;
-  top     : 39.28%;
+  width: 7.97%;
+  height: 3.68%;
+  left: 31.64%;
+  top: 39.28%;
 }
 
 #SMS a {
-  position   : fixed;
-  width      : 8.93%;
-  height     : 3.01%;
-  left       : 43.47%;
-  top        : 39.28%;
-  font-style : normal;
+  position: fixed;
+  width: 8.93%;
+  height: 3.01%;
+  left: 43.47%;
+  top: 39.28%;
+  font-style: normal;
   font-weight: 500;
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 27px;
-  color      : #000000;
+  color: #000000;
 }
 
 .dOverlay {
-  position               : fixed;
-  display                : none;
-  width                  : 100%;
-  height                 : 100%;
-  top                    : 0;
-  left                   : 0;
-  right                  : 0;
-  bottom                 : 0;
-  background             : rgba(25, 25, 25, 0.53);
-  z-index                : 25;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(25, 25, 25, 0.53);
+  z-index: 25;
   -webkit-backdrop-filter: blur(2px);
-  backdrop-filter        : blur(2px);
-  -webkit-transition     : 1s;
-  transition             : 1s;
-  list-style             : none;
+          backdrop-filter: blur(2px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  list-style: none;
 }
 
 .dOverlay input {
-  position        : fixed;
-  left            : 24.15%;
-  top             : 33.48%;
-  width           : 51.69%;
+  position: fixed;
+  left: 24.15%;
+  top: 33.48%;
+  width: 51.69%;
   background-color: white;
-  margin          : none;
-  border-radius   : 4px;
-  height          : 3.01%;
-  border          : 2px solid black;
-  outline         : none;
+  margin: none;
+  border-radius: 4px;
+  height: 3.01%;
+  border: 2px solid black;
+  outline: none;
 }
 
 #close {
   background-color: tomato;
-  position        : relative;
-  left            : 90.09%;
+  position: relative;
+  left: 90.09%;
 }
 
 #close span {
@@ -455,10 +455,9 @@ footer {
 }
 
 .DandT {
-  position : absolute;
-  left     : 69.56%;
-  top      : 3.34vh;
+  position: absolute;
+  left: 69.56%;
+  top: 3.34vh;
   font-size: 14px;
 }
-
 /*# sourceMappingURL=transaction.css.map */

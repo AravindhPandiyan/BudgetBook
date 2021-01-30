@@ -1,79 +1,81 @@
 body {
-  margin     : 0;
-  padding    : 0;
-  display    : flex;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Poppins', sans-serif;
 }
 
 .header {
-  position  : absolute;
-  width     : 100%;
-  height    : 11.60%;
-  left      : 0px;
-  top       : 0px;
+  position: absolute;
+  width: 100%;
+  height: 11.60%;
+  left: 0px;
+  top: 0px;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .arr {
   position: fixed;
-  top     : 5.5%;
-  left    : 4.97%;
-
+  top: 5.5%;
+  left: 4.97%;
 }
 
 .material-icons.cam {
-  position : absolute;
-  top      : 38.58%;
-  left     : 33%;
+  position: absolute;
+  top: 38.58%;
+  left: 33%;
   font-size: 40px;
-  color    : grey;
+  color: grey;
 }
 
 .bu {
   position: fixed;
-  width   : 95px;
-  height  : 36px;
-  top     : 4.80%;
-  left    : 5.86%;
-
+  width: 95px;
+  height: 36px;
+  top: 4.80%;
+  left: 5.86%;
   font-family: 'Poppins', sans-serif;
-  font-style : normal;
+  font-style: normal;
   font-weight: 800;
-  font-size  : 24px;
+  font-size: 24px;
   line-height: 36px;
   /* identical to box height */
-  border     : none;
-  outline    : none;
-
+  border: none;
+  outline: none;
   letter-spacing: 0.05em;
-  background    : transparent;
-  color         : #000000;
+  background: transparent;
+  color: #000000;
 }
 
 #result-wrapper {
-  position     : absolute;
-  left         : 33%;
-  top          : 15.29%;
-  width        : 31.4%;
-  height       : 14.50%;
+  position: absolute;
+  left: 33%;
+  top: 15.29%;
+  width: 31.4%;
+  height: 14.50%;
   border-radius: 50%;
-  background   : #FFFF;
-  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.1);
-  text-align   : center;
+  background: #FFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .sec {
-  position     : absolute;
-  left         : 33%;
-  top          : 15.29%;
-  padding      : 16%;
+  position: absolute;
+  left: 33%;
+  top: 15.29%;
+  padding: 16%;
   /* width     : 31.4%;
-  height       : 14.50%; */
+    height       : 14.50%; */
   border-radius: 50%;
-  background   : #FFFF;
-  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.1);
-  text-align   : center;
+  background: #FFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .fim.hide {
@@ -91,143 +93,132 @@ body {
 }
 
 /* .sec.img{
-  position: absolute;
-  left:34.29%;
-  top:15.29%;
-  width: 31.4%;
-  height: 14.50%;
-  border-radius: 50%;
-  background: url();
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  
- } */
+    position: absolute;
+    left:34.29%;
+    top:15.29%;
+    width: 31.4%;
+    height: 14.50%;
+    border-radius: 50%;
+    background: url();
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    
+   } */
 .cname {
   position: fixed;
-  width   : 78.74%;
-  height  : 5.803%;
-  left    : 9.90%;
-  top     : 33.70%;
-
-  background    : #FFFFFF;
-  border        : 3px solid #C4C4C4;
-  box-sizing    : border-box;
-  border-radius : 15px;
-  font-family   : 'Poppins', sans-serif;
-  font-style    : normal;
-  font-weight   : 600;
-  font-size     : 14px;
-  line-height   : 21px;
+  width: 78.74%;
+  height: 5.803%;
+  left: 9.90%;
+  top: 33.70%;
+  background: #FFFFFF;
+  border: 3px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
   /* identical to box height */
-  outline       : none;
-  padding-left  : 67px;
+  outline: none;
+  padding-left: 67px;
   letter-spacing: 0.05em;
-
   color: #8F8F8F;
-
 }
 
 .num {
-  position     : fixed;
-  width        : 78.74%;
-  height       : 5.803%;
-  left         : 9.90%;
-  top          : 44.19%;
-  outline      : none;
-  background   : #FFFFFF;
-  border       : 3px solid #C4C4C4;
-  box-sizing   : border-box;
+  position: fixed;
+  width: 78.74%;
+  height: 5.803%;
+  left: 9.90%;
+  top: 44.19%;
+  outline: none;
+  background: #FFFFFF;
+  border: 3px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 15px;
-  font-family  : 'Poppins', sans-serif;
-  font-style   : normal;
-  font-weight  : 600;
-  font-size    : 14px;
-  line-height  : 21px;
-  padding-left : 67px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 67px;
   /* identical to box height */
-
-
   letter-spacing: 0.05em;
-
   color: #8F8F8F;
-
 }
 
 .save {
-  position     : absolute;
-  width        : 78.5%;
-  height       : 6.36%;
-  left         : 9.90%;
-  top          : 57.14%;
-  background   : #FFCB21;
-  border       : 3px solid #FFCB21;
-  box-sizing   : border-box;
-  outline      : none;
+  position: absolute;
+  width: 78.5%;
+  height: 6.36%;
+  left: 9.90%;
+  top: 57.14%;
+  background: dodgerblue;
+  border: 3px solid dodgerblue;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
   border-radius: 15px;
-
   font-family: 'Poppins', sans-serif;
-  font-style : normal;
+  font-style: normal;
   font-weight: 600;
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 27px;
   /* identical to box height */
-
-  text-align    : center;
+  text-align: center;
   letter-spacing: 0.05em;
-
   color: #000000;
 }
 
 .ale {
-  position   : absolute;
-  width      : 25.36%;
-  height     : 3.01%;
-  left       : 36.95%;
-  top        : 73.71%;
-  font-style : normal;
+  position: absolute;
+  width: 25.36%;
+  height: 3.01%;
+  left: 36.95%;
+  top: 73.71%;
+  font-style: normal;
   font-weight: 600;
-  font-size  : 18px;
+  font-size: 18px;
   line-height: 27px;
   /* identical to box height */
-
-  text-align    : center;
+  text-align: center;
   letter-spacing: 0.05em;
-  display       : inline-block;
-  white-space   : nowrap;
-  color         : #8F8F8F;
-
+  display: inline-block;
+  white-space: nowrap;
+  color: #8F8F8F;
 }
 
 .ico {
   position: absolute;
-  width   : 7.97%;
-  height  : 3.57%;
-  left    : 13.76%;
-  top     : 35.11%;
-  color   : grey;
-
-
+  width: 7.97%;
+  height: 3.57%;
+  left: 13.76%;
+  top: 35.11%;
+  color: grey;
 }
 
 .flag {
   position: absolute;
-  width   : 7.48%;
-  height  : 2.23%;
-  left    : 13.76%;
-  top     : 45.87%;
+  width: 7.48%;
+  height: 2.23%;
+  left: 13.76%;
+  top: 45.87%;
 }
 
 .message {
-  position     : absolute;
-  width        : 22.22%;
-  height       : 10.044%;
-  left         : 26.81%;
-  top          : 78.68%;
-  border       : none;
-  outline      : none;
-  background   : #FFFFFF;
-  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 22.22%;
+  height: 10.044%;
+  left: 26.81%;
+  top: 78.68%;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-
 }
 
 .material-icons.m {
@@ -235,58 +226,58 @@ body {
 }
 
 .whatsapp {
-  position     : absolute;
-  width        : 22.22%;
-  height       : 10.04%;
-  left         : 50.72%;
-  top          : 78.68%;
-  border       : none;
-  outline      : none;
-  background   : #FFFFFF;
-  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 22.22%;
+  height: 10.04%;
+  left: 50.72%;
+  top: 78.68%;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
-
 /* for adding photo */
 #modal {
-  float     : center;
-  z-index   : 100;
+  float: center;
+  z-index: 100;
   /* height : 100%;
-  width     : 100%; */
+    width     : 100%; */
   background: white;
-  border    : none;
+  border: none;
   text-align: center;
 }
 
 /* .cr-boundary.rama {
-width: 100%;
-height: 100%;
-} */
+  width: 100%;
+  height: 100%;
+  } */
 button,
 .button {
-  position        : relative;
-  background-color: #FFCB21;
-  color           : black;
-  padding         : 10px 0px;
-  border-radius   : 10px;
-  border          : none;
-  font-size       : 16px;
-  font-weight     : bold;
-  display         : block;
-  cursor          : pointer;
-  margin          : 0 auto;
-  width           : 200px;
-  margin-bottom   : 10px;
-  text-transform  : uppercase;
-  outline         : none;
+  position: relative;
+  background-color: dodgerblue;
+  color: black;
+  padding: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 200px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  outline: none;
 }
 
 button.actionCancel,
 .button.actionCancel {
   background-color: black;
-  color           : white;
-  border          : none;
+  color: white;
+  border: none;
 }
 
 button.actionDone,
@@ -297,50 +288,50 @@ button.actionDone,
 button input[type="file"],
 .button input[type="file"] {
   position: absolute;
-  top     : 0;
-  left    : 0;
-  opacity : 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 /* #result-wrapper {
-  float: right;
-} */
-
+    float: right;
+  } */
 /* #result-wrapper img {
-  border: 1px solid;
-
-} */
+    border: 1px solid;
+  
+  } */
 .photo {
   position: fixed;
-  width   : 100%;
-  height  : 100%;
-  opacity : 0;
-  z-index : -20;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -20;
 }
 
 .photo.display {
-  position  : fixed;
-  width     : 100%;
-  height    : 100%;
-  opacity   : 1;
-  z-index   : 20;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 20;
   background: #FFFFFF;
 }
 
 .add.display {
   position: fixed;
-  width   : 100%;
-  height  : 100%;
-  opacity : 1;
-  z-index : 0;
-  padding : 0;
-  border  : 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 0;
+  padding: 0;
+  border: 0;
 }
 
 .add {
   position: fixed;
-  width   : 100%;
-  height  : 100%;
-  opacity : 0;
-  z-index : -20;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -20;
 }
+/*# sourceMappingURL=addCustomer.css.map */
